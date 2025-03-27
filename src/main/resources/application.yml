@@ -1,0 +1,13 @@
+apiPassword: ${API_PASSWORD:}
+
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:sqlite:./sqlite.db}
+    username: ${DB_USER:}
+    password: ${DB_PASSWORD:}
+  ai:
+    mcp:
+      name: rdb-mcp-server
+
+
+logging.file.name: ${LOG_FILE:./rdb-mcp-server.log}
